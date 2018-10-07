@@ -1,0 +1,27 @@
+{
+  "file_name":"fy_2018_sep_12_report.xlsx",
+  "rules":[
+    {
+      "sheet_name":"Tab 3 WTO Raw",
+      "title": "Table 3 -- U.S. Raw Sugar Tariff-Rate Quota (TRQ) WTO Allocations and Entries By Month, Fiscal Year (FY) 2018",
+      "headers_position":"2:3",
+      "details_position":"48:50",
+      "measures_index":"A",
+      "functions":[
+        {
+          "drop_columns":["B:C"],
+          "split_tables":[
+            {
+              "position":"7:14",
+              "units":"Metric Tons, Raw Value"
+            },
+            {
+              "position":"18:25",
+              "units":"Metric Tons, Raw Value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

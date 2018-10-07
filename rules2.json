@@ -1,0 +1,28 @@
+{
+  "file":"fy_2018_sep_12_report.xlsx",
+  "rules" : [
+    {
+      "sheet_name":"Table 1 WASDE",
+      "title": "Table 1 -- U.S. Monthly Sugar Imports, Fiscal Year (FY) 2018",
+      "headers_position":"2:3",
+      "details_position":"27:30",
+      "measures_index":"A:B",
+      "functions":[
+        {
+          "concatenate_measure_strings":["A:B"],
+          "drop_columns":["O:Q"],
+          "split_tables":[
+            {
+              "position":"7:14",
+              "units":"Metric Tons, Raw Value"
+            },
+            {
+              "position":"18:25",
+              "units":"Metric Tons, Raw Value"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
